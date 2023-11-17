@@ -12,17 +12,25 @@ public class HQ15 {
 		System.out.println(g);
 		System.out.println(k);
 		System.out.println(a);
-	
-		g = k;
-		k = a;
-		w = g;
+		
+		/*int temp = a;
 		a = w;
+		w = g;
+		g = k;
+		k = temp;*/
+		
+		w = w+g+k+a;
+		a = w-(g+k+a);
+		k = w-(g+k+a);
+		g = w-(g+k+a);
+		w = w-(g+k+a);
 		
 		System.out.println("After Swapping the values");
 		System.out.println(w);
 		System.out.println(g);
 		System.out.println(k);
 		System.out.println(a);
+		
 	}
 
 }
